@@ -1,2 +1,2 @@
 # confluent-js-deploy
-Deploy Confluent service with Js/Typescript or CLI
+Deploy Confluent services with Js/Typescript or CLI
