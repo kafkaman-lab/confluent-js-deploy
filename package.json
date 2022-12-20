@@ -16,7 +16,6 @@
   ],
   "scripts": {
     "build-docs": "node npm/build-docs.js",
-    "build-types": "node npm/build-types.js",
     "codecov": "node npm/publish-coverage.js",
     "release": "node npm/create-release.js",
     "test": "npm run test-lint && npm run test-unit",
