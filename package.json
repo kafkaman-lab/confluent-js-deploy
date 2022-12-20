@@ -1,0 +1,72 @@
+{
+  "name": "@kafkaman-labs/confluent-js-deploy",
+  "version": "0.0.1",
+  "description": "Deploy Confluent services with Js/Typescript or CLI",
+  "author": {
+    "name": "Kafkaman",
+    "email": "admin@gkafkaman.com",
+    "url": "https://kafkaman.com"
+  },
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "keywords": [
+    "kafkaman",
+    "confluent",
+    "docker"
+  ],
+  "scripts": {
+    "build-docs": "node npm/build-docs.js",
+    "build-types": "node npm/build-types.js",
+    "codecov": "node npm/publish-coverage.js",
+    "release": "node npm/create-release.js",
+    "test": "npm run test-lint && npm run test-unit",
+    "test-benchmark": "node npm/test-benchmark.js",
+    "test-browser": "node npm/test-browser.js",
+    "test-lint": "node npm/test-lint.js",
+    "test-system": "node npm/test-system.js",
+    "test-unit": "nyc --nycrc-path=.nycrc.js node npm/test-unit.js"
+  },
+  "dependencies": {
+    "docker-cli-js": "^2.10.0",
+    "docker-compose": "^0.23.17",
+    "lodash": "4.17.21",
+    "node-downloader-helper": "^2.1.5",
+    "semver": "7.3.7",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "@postman/shipit": "^0.4.0",
+    "async": "^3.2.3",
+    "bipbip": "^0.4.2",
+    "browserify": "^17.0.0",
+    "btoa": "^1.2.1",
+    "chai": "^4.3.6",
+    "chalk": "^4.1.2",
+    "dependency-check": "^4.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-jsdoc": "^36.1.1",
+    "eslint-plugin-lodash": "^7.4.0",
+    "eslint-plugin-mocha": "^10.0.5",
+    "eslint-plugin-security": "^1.5.0",
+    "js-yaml": "^4.1.0",
+    "jsdoc": "^3.6.10",
+    "karma": "^6.3.20",
+    "karma-browserify": "^8.1.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-mocha": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0",
+    "parse-gitignore": "^1.0.1",
+    "postman-jsdoc-theme": "^0.0.3",
+    "postman-request": "^2.88.1-postman.31",
+    "recursive-readdir": "^2.2.2",
+    "require-all": "^3.0.0",
+    "shelljs": "^0.8.5",
+    "strip-json-comments": "^3.1.1",
+    "tsd-jsdoc": "^2.5.0"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
